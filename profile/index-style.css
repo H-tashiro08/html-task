@@ -1,0 +1,22 @@
+@charset "utf-8";
+
+li{
+    color: #f7adc3;
+}
+.taxt-brown{
+    color:pink;
+}
+#bg-yellow{
+    background-color: purple;
+}
+.bg-orange{
+    background-color: orange;
+}
+span{
+    border: 2px dotted green;
+}
+img{
+    width: 40%;
+    width: 400px;
+    height: 300px;
+}
