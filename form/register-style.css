@@ -1,0 +1,28 @@
+@charset "utf-8";
+
+
+.required::after{
+    content: "必須";
+    background-color: red;
+    font-weight: bold;
+    font-size: 12px;
+    color: white;
+    min-width: 10px;
+    padding: 3px 7px;
+    margin: 0px 5px;
+    line-height: 1;
+    white-space: nowrap;
+    text-align: center;
+    border-radius: 10px;
+    display: inline-block;
+}
+table, th, td{
+    border: solid 1px;
+    color: white;
+}
+th{
+    background-color: brown;
+}
+td{
+    background-color: #F08080;
+}
