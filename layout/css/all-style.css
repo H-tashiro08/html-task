@@ -1,0 +1,14 @@
+@charset "utf-8";
+
+body{
+    font-family: 'Noto Sans JP', sans-serif;
+    font-size: 20px;
+    background-color: rgb(235, 163, 199);
+}
+ul{
+    list-style: square;
+}
+h1{
+    text-align: center;
+    font-size: 30px;
+}

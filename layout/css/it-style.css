@@ -1,0 +1,28 @@
+@charset "utf-8";
+
+body{
+    font-family: 'Noto Sans JP', sans-serif;
+}
+h1{
+    text-align: center;
+    font-size: 35px;
+}
+table,td,th{
+    table-layout: auto;
+    height: 100%;
+    border: 1px black solid;
+    text-align: center;
+}
+caption {
+    text-align: center;
+    font-size: 18px;
+}
+img {
+    width: 35%;
+}
+.box{
+    display: flex;
+}
+ul{
+    font-size: 20px;
+}

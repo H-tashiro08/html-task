@@ -1,0 +1,15 @@
+/*記述済みの部分は変更しないでください！*/
+
+@charset "utf-8";
+
+.mark-list {
+    list-style: "★";
+}
+img {
+    width: 25%;
+  }
+.box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
