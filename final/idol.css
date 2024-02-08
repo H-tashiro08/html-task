@@ -1,0 +1,234 @@
+@charset "utf-8";
+
+.gnavi{
+  display: flex;
+  flex-wrap: wrap;/*スマホ表示折り返し用なのでPCのみなら不要*/
+  margin:75px 0 50px 0;
+  list-style: none;
+}
+
+.gnavi li a{
+  display: block;
+  padding:10px 30px;
+  text-decoration: none;
+  color: #333;
+}
+
+.gnavi li{
+  margin-bottom:20px;
+}
+
+/*==================================================
+　5-3-1 中心から外に線が伸びる（下部）
+===================================*/
+
+.gnavi li a{
+    /*線の基点とするためrelativeを指定*/
+	position: relative;
+}
+
+.gnavi li.current a,
+.gnavi li a:hover{
+	color:hotpink;
+}
+
+.gnavi li a::after {
+    content: '';
+    /*絶対配置で線の位置を決める*/
+    position: absolute;
+    bottom: 0;
+    left: 10%;
+    /*線の形状*/
+    width: 80%;
+    height: 2px;
+    background:hotpink;
+    /*アニメーションの指定*/
+    transition: all .3s;
+    transform: scale(0, 1);/*X方向0、Y方向1*/
+    transform-origin: center top;/*上部中央基点*/
+}
+
+/*現在地とhoverの設定*/
+.gnavi li.current a::after,
+.gnavi li a:hover::after {
+    transform: scale(1, 1);/*X方向にスケール拡大*/
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  width: 960px;
+  height: 100px;
+  margin: 0 auto;
+  padding: 50px;
+}
+.logo {
+  margin-top: 40px;
+}
+body{
+  background-image: url(img/pinksannn.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+  font-family: "Noto Sans JP", sans-serif;
+}
+.idol-sub {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  margin-top: 4.1666666667vmax;
+  margin: 100px 0 0 50px;
+}
+.idol-sub__link {
+  width: 100%;
+}
+.idol-sub__item.ill {
+  width: 7.6388888889vw;
+}
+img{
+  width: 200px;
+  pointer-events: none;
+  vertical-align: bottom;
+}
+a {
+  color: #000;
+  text-decoration: none;
+}
+ul, li{
+  list-style: none;
+}
+
+.idol-list__item {
+  overflow: hidden;
+  position: relative;
+  padding: 10.6666666667vw 0 13.3333333333vw;
+}
+.idol-list__main {
+  position: relative;
+  margin-top: 8vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.idol-list__box {
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.idol-list__logo {
+  margin: 0;
+  margin-left: 2.6666666667vw;
+  text-align: center;
+  padding-bottom: 30px;
+}
+p img{
+  width: 82%;
+}
+.idol-list__main-name {
+  position: absolute;
+  bottom: 5.3333333333vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 26.1333333333vw;
+  height: 4.8vw;
+  background-size: contain;
+  background-repeat: no-repeat;
+  font-size: 2.9333333333vw;
+  line-height: 1;
+  font-weight: 600;
+  letter-spacing: .08em;
+  color: #fff;
+}
+.idol-list__item.ill .idol-list__bg {
+  background-color: #fff68d;
+  opacity: .2;
+}
+.idol-list__main-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+p{
+  margin: 0;
+  width: auto;
+}
+.idol-list__bg {
+  position: absolute;
+  top: 5px;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.idol-list__item.ant .idol-list__main {
+  height: 300px;
+  align-items: flex-start;
+}
+.idol-list__item.ant .idol-list__bg {
+  background-color: #853998;
+  opacity: .09;
+}
+.idol-list__item.hok .idol-list__bg {
+  background-color: #fa8333;
+  opacity: .1;
+}
+.idol-list__item.als .idol-list__bg {
+  background-color: #ff699e;
+  opacity: .1;
+}
+.idol-list__item.str .idol-list__bg {
+  background-color: #af011c;
+  opacity: .08;
+}
+.idol-list__item.noc .idol-list__bg {
+  background-color: #384d98;
+  opacity: .08;
+}
+.idol-list__item.shh .idol-list__bg {
+  background-color: #008e74;
+  opacity: .1;
+}
+.idol-list__item.com .idol-list__bg {
+  background-color: rgba(36,19,13,.2);
+  background-color: #24130d;
+  opacity: .09;
+}
+.zoom-box {
+  display: inline-block;
+  overflow: hidden;
+}
+.c-bnr.zoom {
+  display: block;
+  transition-duration: .5s;
+}
+.c-bnr.zoom:hover {
+  transform: scale(1.2);
+}
+.fade .animation-bg {
+  background: #FFF;
+  content: "";
+  position: fixed;
+  z-index: 999;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  animation-name: PageAnime-fade;
+  animation-duration: 0.3s;
+  animation-delay: 0.8s;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
+  pointer-events: none;
+}
+ 
+@keyframes PageAnime-fade {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    display: none;
+  }
+}

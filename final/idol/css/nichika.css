@@ -1,0 +1,331 @@
+@charset "utf-8";
+
+body {
+    font-family: "Noto Sans JP", sans-serif;
+    background-image: url(/img/pinksannn.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+  }
+
+.img-frame {
+    position: relative;
+    width: 100%;
+    height: 500px;
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+@media screen and (max-width: 767px) {
+    .img-frame {
+        width: 100%;
+        height: 200px;
+    }
+}
+
+.img-01,
+.img-02,
+.img-03 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.img-01 {
+    background-image: url('../img/【♡まっクろはムウサぎ♡】七草にちか.jpg');
+    animation: slide-animation-01 24s infinite;
+}
+
+.img-02 {
+    background-image: url('../img/【夜よこノ窓は塗らないデ】七草にちか.jpg');
+    animation: slide-animation-02 24s infinite;
+}
+
+.img-03 {
+    background-image: url('../img/【一億回めくらいの、その夏】七草にちか.jpg');
+    animation: slide-animation-03 24s infinite;
+}
+
+@keyframes slide-animation-01 {
+    0% {
+        opacity: 1;
+        transform: scale(1.0);
+    }
+
+    30% {
+        opacity: 1;
+    }
+
+    40% {
+        opacity: 0;
+        transform: scale(1.15);
+    }
+
+    90% {
+        opacity: 0
+    }
+
+    100% {
+        opacity: 1;
+        transform: scale(1.0);
+    }
+}
+
+@keyframes slide-animation-02 {
+    0% {
+        opacity: 0;
+    }
+
+    30% {
+        opacity: 0;
+        transform: scale(1.1);
+    }
+
+    40% {
+        opacity: 1;
+    }
+
+    60% {
+        opacity: 1;
+    }
+
+    70% {
+        opacity: 0;
+        transform: scale(1.0);
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes slide-animation-03 {
+    0% {
+        opacity: 0;
+    }
+
+    60% {
+        opacity: 0;
+        transform: scale(1.0);
+    }
+
+    70% {
+        opacity: 1;
+    }
+
+    90% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+        transform: scale(1.1);
+    }
+}
+
+.idol-modal__pic {
+    position: absolute;
+    z-index: 0;
+    top: 0;
+    left: 0;
+    padding-left: 0;
+    margin-top: 0;
+    
+}
+
+.idol-modal__lines {
+    position: absolute;
+    z-index: 2;
+    width: 165px;
+}
+
+img,
+picture {
+    width: 100%;
+    max-width: 100%;
+    pointer-events: none;
+    vertical-align: bottom;
+}
+
+.idol-modal__name {
+    display: flex;
+    align-items: center;
+    margin: 0 0 0 auto;
+    width: 92vw;
+    height: 12vw;
+    color: #fff;
+    line-height: 1.15;
+    filter: drop-shadow(0 0.8vw 1.0666666667vw rgba(255, 186, 214, .3));
+}
+
+.idol-modal__item.hiori .idol-modal__name>span {
+    background-color: #144384;
+}
+
+.idol-modal__text {
+    width: 85.3333333333vw;
+    line-height: 1.5714285714;
+    color: #615f90;
+    letter-spacing: .08em;
+}
+
+.idol-modal__pro {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 60vw;
+    margin: 6.6666666667vw 0 0 8vw;
+}
+
+.idol-modal__pro-item {
+    align-items: center;
+    width: 48%;
+    letter-spacing: .08em;
+    font-size: 3.2vw;
+    color: #615f90;
+}
+
+.idol-modal__pro-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.idol-modal__pro-bar {
+    flex: 1;
+    margin-left: 1.3333333333vw;
+    width: 100%;
+    height: 1px;
+    background-color: #615f90;
+}
+
+.idol-modal__pro-text {
+    margin-left: 1.3333333333vw;
+}
+
+.idol-modal__cv {
+    margin: 0;
+    display: flex;
+    align-items: center;
+}
+
+.idol-modal__box {
+    margin: 2.7777777778vw 0 0 auto;
+    width: 42.3611111111vw;
+}
+
+.idol-modal__pro {
+    width: 25vw;
+    margin: 2.0833333333vw 0 0 0;
+}
+
+.idol-modal__text {
+    width: 33.6805555556vw;
+    margin: 2.7777777778vw 0 0;
+    font-size: 1.25vw;
+    padding-left: 20px;
+}
+
+.idol-modal__pro-item {
+    font-size: 1.1111111111vw;
+}
+
+.idol-modal__inner {
+    height: 100%;
+    padding-top: 9.7222222222vw;
+}
+
+.idol-modal__pic {
+    width: 80%;
+    height: 100%;
+}
+
+.idol-modal__lines {
+    left: 0;
+    width: 11.1805555556vw;
+}
+
+.name .cv {
+    font-size: 1.0rem;
+    margin: 20px;
+}
+
+.name {
+    text-align: right;
+    padding-right: 250px;
+    color: #615f90;
+}
+
+li {
+    list-style: none;
+}
+.idol-modal__pro-bar {
+    flex: 1;
+    margin-left: 1.3333333333vw;
+    width: 100%;
+    height: 1px;
+    background-color: #615f90;
+}
+.c-txt{
+    text-align: right;
+    font-family: 'Playfair Display', serif;
+}
+.c-txt.marker {
+    position: relative;
+    z-index: 1;
+    padding: 0 10px;
+  }
+  .c-txt.marker::before {
+    background: #a6cdb6;
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    margin: auto;
+    transform: scale(0, 1);
+    transform-origin: right top;
+    transition: transform .3s;
+    z-index: -1;
+  }
+  .c-txt.marker:hover {
+    color: #fff;
+  }
+  .c-txt.marker:hover::before {
+    transform-origin: left top;
+    transform: scale(1, 1);
+  }
+  .fade .animation-bg {
+    background: #FFF;
+    content: "";
+    position: fixed;
+    z-index: 999;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    animation-name: PageAnime-fade;
+    animation-duration: 0.3s;
+    animation-delay: 0.8s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+    pointer-events: none;
+  }
+   
+  @keyframes PageAnime-fade {
+    0% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+      display: none;
+    }
+  }
