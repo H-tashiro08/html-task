@@ -109,10 +109,7 @@ body{
     transform: translate(-30px,0);
 }
 }
-p{
-  text-align: center;
-  width: 100%;
-}
+
 .timeline{
   display: flex;
 }
@@ -141,4 +138,39 @@ p{
     opacity: 0;
     display: none;
   }
+}
+
+
+.link1 {
+  color: black;
+  font-size: 16px;
+  font-weight: bold;
+  background: transparent;
+  margin-bottom: 90px;
+  text-align: center;
+  line-height: 60px;
+  border: 2px solid #facbf1;
+  position: relative;
+  z-index: 1;
+  display: block;
+  overflow: hidden;
+  transition: .3s;
+}
+.link1::before {
+  content: "";
+  width: 100%;
+  position: absolute;
+  top: 0;
+  right: -60px;
+  z-index: -1;
+  border-right: 60px solid transparent;
+  border-bottom: 60px solid #facbf1;
+  transform: translateX(-100%);
+  transition: transform ease .3s;
+}
+.link1:hover {
+  color: #fff;
+}
+.link1:hover::before {
+  transform: translateX(0);
 }
